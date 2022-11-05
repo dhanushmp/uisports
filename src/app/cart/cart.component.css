@@ -1,0 +1,22 @@
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    text-align: center;
+    transform:translate(-50%,-50%);
+
+
+}
+h4,h6{
+    font-weight: 500;
+}
+.card-table{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-width:none;
+    word-wrap:break-word;
+    background-repeat:space;
+    background-clip:border-box;
+    border-radius:.25rem;
+}

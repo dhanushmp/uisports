@@ -1,0 +1,30 @@
+.prod img{
+width:64px
+}
+item{
+    margin:0px 15px;
+    text-align:center;
+}
+.card{
+    padding:20px;
+    margin:30px;
+}
+.card img{
+    width:200px;
+    height:200px;
+}
+.card img:hover{
+    transition: 00.3s ease-in-out;
+    transform: scale(1.1);
+}
+.card-top{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    word-wrap:break-word;
+    background:white;
+    background:border-box;
+
+
+}

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let prod of Productary">
+            <div class="card col-md-3">
+                <img src="{{prod.images}}" alt="">
+                <h3 style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch;">{{prod.productName}}</h3>
+                <h5 style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch;">{{prod.productCategory}}</h5>
+                <p><strong>Price:</strong>₹{{prod.price}}</p>
+                <button class="btn btn-dark">Add to cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" ><h1>Amazon</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        
+
+          <li *ngIf="!isUserAuthenticated()" class="nav-item active">
+            <button routerLink="login"
+            class="m-1 btn btn-light btn-outline-primary" button>Admin Login</button>
+            <li class="nav-item active">
+              <button routerLink="home"
+              class="m-1 btn btn-light btn-outline-primary" button>Home</button>
+            </li>
+            <li class="nav-item active">
+              <button routerLink="customer"
+              class="m-1 btn btn-light btn-outline-primary" button>Customers</button>
+            </li>
+            <li class="nav-item active">
+              <button routerLink="product"
+              class="m-1 btn btn-light btn-outline-primary" button>product</button>
+            </li>
+            <li class="nav-item active">
+              <button routerLink="order"
+              class="m-1 btn btn-light btn-outline-primary" button>Order</button>
+            </li>
+            <li class="nav-item active">
+              <button routerLink="cart"
+              class="m-1 btn btn-light btn-outline-primary" button>Cart</button>
+            </li>
+          
+          <li *ngIf="isUserAuthenticated()" class="logout" (click)="logOut()">
+            <button 
+            class="m-1 btn btn-light btn-outline-primary" button>Log Out</button>
+          </li>
+         
+         
+          
+         
+        </ul>
+      </div>
+    </nav>
+<router-outlet></router-outlet>
